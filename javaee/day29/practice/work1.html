@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="" method="get">
+      <!--action属性：表单提交的目的位置-->
+      <!--method属性：表单提交方式-->
+      <!--单行文本框-->
+      用户名:<input type="text" name="username"><br>
+      <!--密码框-->
+      密码:<input type="password" name="password"><br>
+      <!--单选框-->
+      喜欢的球队:<input type="radio" name="team" value="休斯敦"> 火箭
+      <input type="radio" name="team" value="洛杉矶"> 湖人
+      <input type="radio" name="team" value="波特兰"> 开拓者
+      <input type="radio" name="team" value="布鲁克林"> 篮网
+      <input type="radio" name="team" value="芝加哥"> 公牛 <br>
+      <!--多选框-->
+      喜欢的球星:<input type="checkbox" name="star" value="火箭"> 詹姆斯.哈登
+      <input type="checkbox" name="star" value="灰熊"> 贾.莫兰特
+      <input type="checkbox" name="star" value="开拓者"> 达米安.利拉德
+      <input type="checkbox" name="star" value="公牛"> 扎克.拉文
+      <input type="checkbox" name="star" value="76人"> 阿伦.艾弗森 <br>
+      <!--文件表单-->
+      上传头像:<input type="file"> <br>
+      <!--日期表单-->
+      生日:<input type="date" name="date"> <br>
+      <!--按钮-->
+      <input type="button" value="普通按钮"> <br>
+      <input type="reset" value="重置按钮"> <br>
+      <input type="submit" value="提交按钮"> <br>
+      <!--多行文本框-->
+      自我介绍:<textarea name="desc"></textarea> <br>
+      <!--下拉框-->
+      <!--下拉列表用到了两种标签，其中select标签用来定义下拉列表，而option标签设置列表项。
+      name属性在select标签中设置。
+      value属性在option标签中设置。
+      option标签的标签体是显示出来给用户看的，提交到服务器的是value属性的值。
+      通过在option标签中设置selected="selected"属性实现默认选中的效果。-->
+      地址:<select name="city1">
+      <option value="LA">洛杉矶</option>
+      <option value="BTL">波特兰</option>
+      <option value="ZJG">芝加哥</option>
+      <option value="MAM">迈阿密</option>
+       </select>
+      <select name="city2">
+        <option value="XSD">休斯顿</option>
+        <option value="NY">纽约</option>
+        <option value="DLD">多伦多</option>
+        <option value="KLFL">克利夫兰</option>
+      </select>
+      <!--隐藏域-->
+      <input type="hidden" name="userID" value="2233"/>
+    </form>
+</body>
+</html>
