@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+<script>
+    //数组动态初始化
+    let arr = new Array();
+    arr[0] = 123;
+    arr[1] = "abc";
+    arr[2] = "edc";
+    //添加元素
+    arr.push("efg");
+    //遍历数组
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+
+    console.log("==============================================")
+    //数组的静态初始化
+    let arr2 = ["e","d","c"];
+    //添加元素
+    arr2.push("j");
+    //遍历数组
+    for (let i = 0; i < arr2.length; i++) {
+        console.log(arr2[i])
+    }
+    //数组元素反转
+    arr2.reverse();
+    console.log(arr2);
+
+    //数组元素拼接字符串
+    let s = arr2.join("...");
+    console.log(s);
+
+    //字符串拆分为数组
+    let split = arr2.split(",");
+    for (let i = 0; i < split.length; i++) {
+        console.log(split[i])
+    }
+
+    //从指定位置删除数组元素
+    arr2.splice(1,2);
+    for (let i = 0; i < arr2.length; i++) {
+        console.log(arr2[i])
+    }
+
+</script>
+    </body>
+</html>

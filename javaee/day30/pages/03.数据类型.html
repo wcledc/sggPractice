@@ -7,19 +7,49 @@
 <body>
 <input type="button" value="点我" id="btn">
       <script>
-     <!-- var btn = document.getElementById("btn");
+          //获取按钮对象
+      var btn = document.getElementById("btn");
+      //调用方法将按钮对象与事件绑定
       btn.onclick = function(){
-        var var01 = 123;
-        alert(typeof var01);-->
+          //声明基本类型
+          //整数类型
+        /*var var01 = 123;
+        alert(var01);
+        var var02 = 4.13;
+        alert(var02)
+          //获取真实引擎类型
+          alert(typeof var02);*/
 
-        var flag = 123;
+        //字符串类型
+          /*var var03 = "HelloWorld";
+          //打印输出
+          alert(var03);
+        alert(typeof var03);*/
 
+          //布尔类型
+        /*var var04 = true;
+        alert(var04);
+        alert(typeof var04);*/
+
+        //特殊值
+          //null值：对象类型
+         /* var var05 = null;
+          alert(var05);
+          alert(typeof var05);
+          //字符串拼接 和Java一样
+          var var06 = "Hello" + "Hello";
+          alert(var06);
+          alert(typeof var06);*/
+          //非法值
+          var flag = "Hello" - "Hello";
         if(flag){
             alert("true")
         }else{
-        alert("true")
+        alert("false")
         }
         }
+
+
       </script>
 </body>
 </html>

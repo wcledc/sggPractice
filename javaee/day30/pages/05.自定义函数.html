@@ -6,43 +6,32 @@
 </head>
 <body>
         <script>
+            //调用方法
             method01();
+
             method02(3,4);
 
-            //方法定义格式
+            var result03 = method03();
+            console.log(result03);
+
+            var result04 = method04(1,2,3,4);
+            console.log(result04);
+
             //无参无返回值
-            /*function method01() {
-                console.log("无参无返回值")
+            function method01() {
+                console.log("无参无返回值");
             }
             //有参无返回值
             function method02(a,b) {
-                console.log("有参无返回值" + a + b)
+                console.log(a+b);
             }
             //无参有返回值
             function method03() {
                 return "无参有返回值"
             }
             //有参有返回值
+            //形参列表中的形参省略数据类型
             function method04(a,b,c,d) {
-                return "有参有返回值" + a + b + c + d;
-            }*/
-
-
-            //自定义函数
-            //无参无返回值
-            function mt1() {
-                console.log("无参无返回值")
-            }
-            //有参无返回值
-            function mt2(a,b) {
-                console.log("有参无返回值" + a + b)
-            }
-            //无参有返回值
-            function mt3() {
-                return "无参有返回值"
-            }
-            //有参有返回值
-            function mt4(a,b,c,d) {
                 return "有参有返回值" + a + b + c + d;
             }
         </script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOSN转换</title>
+</head>
+<body>
+        <input type="button" value="JOSN对象转换为JOSN字符串" id="btn">
+
+<script>
+        document.getElementById("btn").onclick = function () {
+            //声明并初始化json对象
+            var obj = {
+                id:111,
+                name:"ccc",
+                age:18
+            };
+
+            //json对象转换json字符串
+            var str = JSON.stringify(obj);
+            console.log(str);
+            console.log(typeof str);
+
+            console.log("===================================")
+
+            //json字符串转换为json对象
+            var json_obj = JSON.parse(str);
+            console.log(json_obj);
+            console.log(typeof json_obj);
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM查询</title>
+</head>
+<body>
+        <ul id="city">
+            <li class="bj">北京</li>
+            <li class="tj">天津</li>
+            <li class="sh">上海</li>
+            <li class="sz">深圳</li>
+            <li class="xa">西安</li>
+        </ul>
+        <form>
+            用户:<input type="text" name="username"> <br>
+            密码:<input type="password" name="password"> <br>
+            <input type="button" value="提交" id="btn">
+
+        </form>
+        <script>
+            document.getElementById("btn").onclick = function () {
+                //通过id获取标签对象
+                var byId = document.getElementById("city");
+
+            }
+
+
+        </script>
+</body>
+</html>
