@@ -13,7 +13,7 @@ public class Demo02 {
         System.out.println(Min);
     }
 
-    //求总和
+    //求总和 ============
     public static int getSum(int[] arr) {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
