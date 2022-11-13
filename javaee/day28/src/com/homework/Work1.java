@@ -5,8 +5,7 @@ import com.homework.javebean.Emp;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.sql.Connection;
 import java.util.List;
