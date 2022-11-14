@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02.修改指定标签对象的属性内容</title>
+</head>
+<body>
+        <a href="http://www.baidu.com" id="wz">百度</a>
+        <input type="button" value="修改" id="btn01">
+
+        <hr>
+
+        <p id="atguigu"><b>尚硅谷</b></p>
+        <input type="button" value="修改" id="btn02">
+
+        <script>
+            //获取按钮对象并把绑定事件
+            document.getElementById("btn01").onclick=function () {
+                //获取a标签对象
+                var wz = document.getElementById("wz");
+                //修改元素对象属性值
+                wz.href="http://www.atguigu.com"
+                //修改标签内容
+                //不识别标签
+                //wz.innerText="尚硅谷";
+                //识别标签
+                wz.innerHTML="尚硅谷";
+      }
+
+            //获取按钮标签对象并绑定事件
+            document.getElementById("btn02").onclick=function () {
+                //获取p标签对象
+                var at = document.getElementById("atguigu");
+
+                //修改p标签内容
+                //不识别标签
+                at.innerText="<b>让天下没有难学的内容</b>";
+                //识别标签
+                at.innerHTML="<b>让天下没有难学的内容</b>"
+            }
+        </script>
+</body>
+</html>

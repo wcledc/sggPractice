@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jss/vue.js"></script>
+</head>
+<body>
+     <div id="app">
+     <a href="root.html" @click.prevent="method()">跳转到root页面</a>
+
+<script>
+    new Vue({
+        el: "app",
+        data: {},
+        methods: {
+            method: function () {
+                var result = confirm("是否确认跳转到root页面");
+                if (result) {
+                    //进行跳转
+                } else {
+                    //不进行跳转
+                    //取消事件的默认行为
+                    event.preventDefault();
+                }
+            }
+        }
+    });
+</script>
+</div>
+</body>
+</html>

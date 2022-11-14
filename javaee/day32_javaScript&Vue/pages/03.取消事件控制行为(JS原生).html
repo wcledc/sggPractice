@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>取消时间控制行为(js原生)</title>
+</head>
+<body>
+        <a href="root.html" onclick="method()">跳转到root页面</a>
+
+        <script>
+            function method() {
+                var result = confirm("是否确认跳转到root页面")
+
+                if(result){
+                    //进行跳转
+                }else{
+                    //不进行跳转
+                    //取消事件的默认行为
+                    event.preventDefault();
+
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01.在具体元素节点范围内查找子节点和父节点</title>
+</head>
+<body>
+        <ul id="citys">
+            <li id="bj">北京</li>
+            <li id="sh">上海</li>
+            <li id="sz">深圳</li>
+            <li id="wh">武汉</li>
+            <li id="xa">西安</li>
+        </ul>
+
+        <hr>
+
+        <table id="table">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <script>
+           /* //通过id获取指定标签对象
+            var citys = document.getElementById("citys");
+            console.log(citys);
+            //通过ul标签标签对象获取所有（直接）子标签对象
+            var citys_children = citys.children;
+            console.log(citys_children);
+            //通过ul标签对象获取（直接）父标签对象
+            var citys_parentElement = citys.parentElement;
+            console.log(citys_parentElement);
+
+            console.log("========================================")
+
+            //通过id获取指定标签对象
+            var table = document.getElementById("table");
+            //通过table标签对象获取所有的子标签对象
+            var table_children = table.children;
+
+            //通过数组获取隐藏的tbody标签
+            var table_tbdoy = table_children[0];
+            console.log(table_tbdoy);
+            //通过table标签获取所有的子标签
+            var tbody_children = table_tbdoy.children;
+            console.log(tbody_children);*/
+
+            console.log("====================================")
+           //通过id获取指定标签对象
+           var city = document.getElementById("citys");
+            console.log(city);
+           //通过ul标签标签对象获取所有（直接）子标签对象
+           var children = city.children;
+            console.log(children);
+           //通过ul标签对象获取（直接）父标签对象
+           var parentElement = city.parentElement;
+           console.log(parentElement);
+
+           console.log("========================================")
+
+           //通过id获取指定标签对象
+           var table = document.getElementById("table");
+           //通过table标签对象获取所有的子标签对象
+           //通过数组获取隐藏的tbody标签
+           //通过table标签获取所有的子标签
+        </script>
+</body>
+</html>

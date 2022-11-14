@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work2</title>
+    <script src="../../books/jss/vue.js"></script>
+</head>
+<body>
+        <h1>动态表格Vue版</h1>
+        <div id="app">
+            <table border="1" width="300px" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>专业</th>
+                    <th>操作</th>
+                </tr>
+                <tr v-for="(user,index) in empList">
+                    <td>{{user.empId}}</td>
+                    <td>{{user.empName}}</td>
+                    <td>{{user.empAge}}</td>
+                    <td>{{user.empSubject}}</td>
+                    <td>
+                        <input type="button" value="删除" @click="deleteEmp(index)"/>
+                    </td>
+                </tr>
+            </table>
+            序号:<input type="text" v-model="emp.empId"/><br>
+            姓名:<input type="text" v-model="emp.empName"/><br>
+            年龄:<input type="text" v-model="emp.empAge"/><br>
+            专业:<input type="text" v-model="emp.empSubject"/><br>
+            <input type="button" value="添加员工" @click="addEmp"/>
+        </div>
+        <script>
+            new Vue({
+                el:"#app",
+                data:{
+                    emp:{},
+                    empList:[
+                        {empId:11,empName:"张三",empAge:20,empSubject:"java"},
+                        {empId:12,empName:"李四",empAge:20,empSubject:"java"},
+                        {empId:13,empName:"王五",empAge:20,empSubject:"java"},
+                    ],
+                },
+                methods:{
+                    addEmp(){
+                        this.empList(this.emp);
+                        this.emp={};
+                    },
+                    deleteEmp(i){
+                        //删除tr
+                        //event.target.parentElement.parentElement.remove();
+                        //从数组中将你要移除的数据删除  js数组中的第一个删除方法splice(start,count)
+                        this.empList.splice(i,1);
+                    }
+                }
+            })
+        </script>
+</body>
+</html>

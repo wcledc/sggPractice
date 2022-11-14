@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件渲染</title>
+    <script src="../../books/jss/vue.js"></script>
+</head>
+<body>
+        <div id="app">
+            <div v-if="flag" style="font-size: 10px; color: red">用户名或密码不能为空</div>
+            用户:<input type="text" v-model="username"> <br>
+            密码:<input type="password" v-model="password"> <br>
+            <input type="button" :value="button" @click="login()">
+            <div v-show="tf">v-show</div>
+        </div>
+
+        <script>
+            new Vue({
+                el:"#app",
+                data:{
+                    username:"",
+                    password:"",
+                    button:"登录",
+                    flag:false,
+                    tf:false
+                },
+                methods:{
+                    login:function () {
+                        if (this.username==""||this.password==""){
+                            //console.log("用户名或密码不能为空")
+                            this.flag=true;
+                        }else {
+                            //console.log("登录成功")
+                            this.flag=false;
+                            alert("登录成功")
+                        }
+                    }
+                }
+            })
+        </script>
+</body>
+</html>

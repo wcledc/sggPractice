@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03.针对指定标签对象进行增删操作</title>
+</head>
+<body>
+        <!--无序列表标签-->
+        <ul id="citys">
+            <li id="bj">北京</li>
+            <li id="sh">上海</li>
+            <li id="sz">深圳</li>
+            <li id="wh">武汉</li>
+            <li id="xa">西安</li>
+        </ul>
+
+        <script>
+            //新建li标签对象
+            var li = document.createElement('li');
+            //给新建的li标签添加内容
+            li.innerHTML="成都";
+
+            //获取ul标签对象
+            var citys = document.getElementById("citys");
+            //将新建的li标签添加进ul所有子标签的后面
+            citys.appendChild(li);
+
+            //获取武汉的标签对象
+            var wh = document.getElementById("wh");
+            //将成都标签添加到武汉标签前面//(要添加的标签,要往那个标签前添加)
+            citys.insertBefore(li,wh);
+
+            //新加入一个标签
+            var li1 = document.createElement("li");
+            //给新建的li标签添加内容
+            li1.innerHTML="测试";
+            //将新建li1标签添加到ul标签中
+            citys.appendChild(li1);
+            //针对指定的标签进行删除操作
+            //删除li1标签
+            li1.remove();
+
+
+        </script>
+</body>
+</html>

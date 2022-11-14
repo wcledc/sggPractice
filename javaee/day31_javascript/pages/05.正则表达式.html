@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+</head>
+<body>
+        <input type="button" value="测试正则1" onclick="method01()">
+        <hr>
+        <input type="button" value="测试正则2" onclick="method02()">
+        <hr>
+        <input type="button" value="测试正则3" onclick="method03()">
+        <hr>
+        <input type="button" value="测试正则4" onclick="method04()">
+        <hr>
+        <input type="button" value="测试正则5" onclick="method05()">
+        <hr>
+
+        <script>
+            function method01() {
+                //声明字符串
+                var str = "Helloworld";
+                //声明正则表达式
+                var reg = /o/;
+                //测试str是否符合reg的要求
+                //判断reg里面是否含有o
+                var result = reg.test(str);
+                console.log(result);
+            }
+
+            function method02() {
+                    //声明字符串
+                    var str = "HellOWOrld";
+                    //声明正则表达式
+                    var reg = /o/gi; //忽略大小写
+
+                    //测试str是否符合reg的要求
+                    var result = reg.test(str);
+                    console.log(result);
+            }
+
+            function method03() {
+                    //声明字符串
+                    var str = "HelloWorld";
+                    //声明正则表达式
+                    var reg = /o/g;  //g全局匹配
+
+                    //获取字符在字符串中出现的所有信息
+                    var arr = str.match(reg);
+                    console.log(arr)
+            }
+
+            function method04() {
+                    var qq = "1234587987";
+
+                    //编写qq号的正则表达式并验证
+                    var reg = /^[1-9]{1}[0-9]{4,10}$/;  //1.全部数字  2.0不能开头  3.长度5-11
+
+                    //验证
+                    var result = reg.test(qq);
+                    console.log(result);
+            }
+
+            function method05() {
+                    var phone = "18888888881";
+
+                    //编写手机号的正则表达式并验证
+                    var reg = /^[3-9]{1}[0-9]{9}$/;  //1.11位    2.1开头     3.全数字    4.第二位不能是0-2
+
+                    var result = reg.test(phone);
+                    console.log(result);
+            }
+        </script>
+</body>
+</html>

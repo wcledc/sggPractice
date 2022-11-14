@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侦听</title>
+    <script src="../jss/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>姓:{{startName}}</p>
+    <input type="text" v-model="startName">
+    <p>名字:{{endName}}</p>
+    <input type="text" v-model="endtName">
+    <p>全名:{{fullName}}</p>
+</div>
+
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            startName:"张",
+            endName:"三",
+            fullName:"张三"
+        },
+        watch:{
+            startName:function (inputValue) {
+                this.fullName = inputValue + this.endName;
+            },
+            endName:function (inputValue) {
+                this.fullName = this.startName + inputValue;
+            },
+        }
+    });
+</script>
+</body>
+</html>

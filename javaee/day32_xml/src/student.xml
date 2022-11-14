@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<stuents>
+    <student>
+        <id>220927001</id>
+        <name>张三</name>
+        <age>15</age>
+    </student>
+    <student>
+        <id>220927002</id>
+        <name>李四</name>
+        <age>15</age>
+    </student>
+    <student>
+        <id>220927003</id>
+        <name>王五</name>
+        <age>15</age>
+    </student>
+</stuents>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+</head>
+<body>
+        <p id="atguigu">尚硅谷</p>
+        <input type="button" value="修改" onclick="method()">
+        <script>
+            function method() {
+                //获取id为atguigu的标签对象
+                var atguigu = document.getElementById("atguigu");
+
+                //修改标签内容
+                atguigu.innerText="让天下没有难学的技术";
+            }
+        </script>
+</body>
+</html>

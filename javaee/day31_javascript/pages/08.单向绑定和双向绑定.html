@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单向绑定和双向绑定</title>
+    <script src="../../books/jss/vue.js"></script>
+</head>
+<body>
+        <div id="app">
+            <!--<input type="text" value="尚硅谷">-->
+            <!--<input type="text" v-bind:value="str1">-->
+            <input type="text" :value="str1">
+            <input type="button" value="单向绑定" @click="method01()">
+            <hr>
+            <!--<input type="text" value="让天下没有难学的技术">-->
+            <!--<input type="text" v-model:value="str2">-->
+            <input type="text" v-model="str2">
+            <input type="button" value="双向绑定" @click="method02()">
+        </div>
+
+        <script>
+            new Vue({
+                el:"#app",
+                data:{
+                    str1:"尚硅谷",
+                    str2:"让天下没有难学的技术"
+                },
+                method:{
+                    method01: function () {
+                        console.log(this.str1)
+                    },
+                    method02: function () {
+                        console.log(this.str2)
+                    }
+                }
+            });
+        </script>
+</body>
+</html>

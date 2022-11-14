@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命周期</title>
+</head>
+<body>
+        <div id="app">
+            <p id="p">{{atguigu}}</p>
+        </div>
+
+        <script>
+            new Vue({
+                el:"#app",
+                data:{
+                    atguigu:"尚硅谷"
+                },
+
+                //对象创建前
+                beforeCreate:function () {
+                    console.log("对象创建前")
+                    console.log(this.atguigu)
+                    console.log(document.getElementById("p").innerText)
+                },
+                //对象创建后
+                created:function () {
+                    console.log("对象创建后")
+                    console.log(this.atguigu)
+                    console.log(document.getElementById("p").innerText)
+                },
+                //渲染挂载前
+                beforeMount:function () {
+                    console.log("渲染挂载前")
+                    console.log(this.atguigu)
+                    console.log(document.getElementById("p").innerText)
+                },
+                //渲染挂载后
+                mounted:function () {
+                    console.log("渲染挂载后")
+                    console.log(this.atguigu)
+                    console.log(document.getElementById("p").innerText)
+                }
+            })
+        </script>
+</body>
+</html>

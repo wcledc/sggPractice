@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+</head>
+<body>
+        <input type="button" value="动态绑定" id="btn01">
+                                                        <!--//静态绑定：传入方法-->
+        <input type="button" value="静态绑定" id="btn02" onclick="method()">
+
+        <hr>
+        <input type="button" value="单击绑定" onclick="method01()">
+        <input type="button" value="双击绑定" ondblclick="method02()">
+        <hr>
+        <img src="../imgs/sky.jpg" height="500" weight="477" onmousemove="method03()"/>
+
+        <script>
+            //动态绑定
+            var btn01 = document.getElementById("btn01");
+            btn01.onclick=function () {
+                console.log("动态绑定")
+            }
+
+            //静态绑定
+            function method() {
+                console.log("静态绑定")
+            }
+
+            //单击绑定
+            function method01() {
+                alert("单击")
+            }
+
+            //双击绑定
+            function method02() {
+                alert("双击")
+            }
+
+            //编写鼠标移动方法
+            //鼠标移动绑定
+            function method03() {
+                console.log("xxx看爱情动作片")
+            }
+
+        </script>
+</body>
+</html>

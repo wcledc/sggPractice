@@ -1,5 +1,7 @@
 package com.atguigu.demo1;
 
+import org.junit.Test;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 
@@ -77,4 +79,6 @@ public class Jdbcdemo1 {
         //关闭资源
         conn.close();
     }
+
+
 }
