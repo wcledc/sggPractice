@@ -177,4 +177,45 @@
         <servlet-name>wosb03</servlet-name>
         <url-pattern>/work3</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SubServlet12</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo12.SubServlet12</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet12</servlet-name>
+        <url-pattern>/atguigu12</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SuccessServlet</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo12.SuccessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SuccessServlet</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>ErrorServlet</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo12.ErrorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorServlet</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SubServlet13</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo13.SubServlet13</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet13</servlet-name>
+        <url-pattern>/atguigu13</url-pattern>
+    </servlet-mapping>
 </web-app>
