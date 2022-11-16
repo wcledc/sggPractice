@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <param-name>key111</param-name>
+        <param-value>value111</param-value>
+    </context-param>
+    <context-param>
+        <param-name>key222</param-name>
+        <param-value>value222</param-value>
+    </context-param>
+    <context-param>
+        <param-name>key333</param-name>
+        <param-value>value333</param-value>
+    </context-param>
+
+        <servlet>
+            <!--定义Servlet名字-->
+            <servlet-name>SubServlet01</servlet-name>
+            <!--编写servlet全类名-->
+            <servlet-class>com.atguigu.servlet.demo01.SubServlet01</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>SubServlet01</servlet-name>
+            <url-pattern>/atguigu</url-pattern>
+        </servlet-mapping>
+
+
+
+        <servlet>
+            <!--定义Servlet名字-->
+            <servlet-name>SubServlet02</servlet-name>
+            <!--编写servlet全类名-->
+            <servlet-class>com.atguigu.servlet.demo02.SubServlet02</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>SubServlet02</servlet-name>
+            <url-pattern>/atguigu2</url-pattern>
+        </servlet-mapping>
+
+
+        <servlet>
+            <!--定义servlet名字-->
+            <servlet-name>wosb01</servlet-name>
+            <!--获取servlet全类名-->
+            <servlet-class>com.practice.work01.SubServlet01</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>wosb01</servlet-name>
+            <url-pattern>/work1</url-pattern>
+        </servlet-mapping>
+
+
+
+    <servlet>
+        <!--定义Servlet名字-->
+        <servlet-name>SubServlet03</servlet-name>
+        <!--编写servlet全类名-->
+        <servlet-class>com.atguigu.servlet.demo03.SubServlet03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet03</servlet-name>
+        <url-pattern>/atguigu3</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <!--定义Servlet名字-->
+        <servlet-name>SubServlet04</servlet-name>
+        <!--编写servlet全类名-->
+        <servlet-class>com.atguigu.servlet.demo04.SubServlet04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet04</servlet-name>
+        <url-pattern>/atguigu4</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <!--定义Servlet名字-->
+        <servlet-name>SubServlet05</servlet-name>
+        <!--编写servlet全类名-->
+        <servlet-class>com.atguigu.servlet.demo05.SubServlet05</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet05</servlet-name>
+        <url-pattern>/atguigu5</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <!--定义Servlet名字-->
+        <servlet-name>SubServlet06</servlet-name>
+        <!--编写servlet全类名-->
+        <servlet-class>com.atguigu.servlet.demo06.SubServlet06</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet06</servlet-name>
+        <url-pattern>/atguigu6</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <!--定义Servlet名字-->
+        <servlet-name>SubServlet07</servlet-name>
+        <!--编写servlet全类名-->
+        <servlet-class>com.atguigu.servlet.demo07.SubServlet07</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet07</servlet-name>
+        <url-pattern>/atguigu7</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>wosb02</servlet-name>
+        <servlet-class>com.practice.work02.SubServlet02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wosb02</servlet-name>
+        <url-pattern>/work2</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>SubServlet08</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo08.SubServlet08</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet08</servlet-name>
+        <url-pattern>/atguigu8</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SubServlet09</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo09.SubServlet09</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet09</servlet-name>
+        <url-pattern>/atguigu9</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SubServlet10</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo10.SubServlet10</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet10</servlet-name>
+        <url-pattern>/atguigu10</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SubServlet11</servlet-name>
+        <servlet-class>com.atguigu.servlet.demo11.SubServlet11</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet11</servlet-name>
+        <url-pattern>/atguigu11</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>wosb03</servlet-name>
+        <servlet-class>com.practice.work03.SubServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wosb03</servlet-name>
+        <url-pattern>/work3</url-pattern>
+    </servlet-mapping>
+</web-app>
