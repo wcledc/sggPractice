@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base th:href="@{/}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h1>解析上下文路径</h1>
+        <hr>
+        <p th:text="${contextPath}"></p>
+        <img th:src="${photo}" width="30%" height="30%">
+        <hr>
+        <!--如果没有使用thymeleaf，可以应用1-->
+        <a href="target?username=zhangsan&password=123456">跳转1</a>
+        <hr>
+        <!--适用场景：后期连接有部分场景无法使用该方式2-->
+        <a th:href="@{/target?username=lisi&password=666666}">跳转2</a>
+        <hr>
+        <!--适用场景：方式2解决不了的，方式3 可以解决-->
+        <a th:href="@{/target(username='wangwu',password='888888')}">跳转3</a>
+</body>
+</html>

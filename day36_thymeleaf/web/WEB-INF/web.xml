@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <!--name:前缀的别名-->
+        <param-name>start</param-name>
+        <param-value>/views/</param-value>
+    </context-param>
+
+    <context-param>
+        <!--name:后缀的别名-->
+        <param-name>end</param-name>
+        <param-value>.html</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>SubServlet01</servlet-name>
+        <servlet-class>com.atguigu.thymeleaf.demo01.SubServlet01</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet01</servlet-name>
+        <url-pattern>/atguigu01</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SubServlet02</servlet-name>
+        <servlet-class>com.atguigu.thymeleaf.demo02.SubServlet02</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet02</servlet-name>
+        <url-pattern>/atguigu02</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SubServlet03</servlet-name>
+        <servlet-class>com.atguigu.thymeleaf.demo03.SubServlet03</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet03</servlet-name>
+        <url-pattern>/atguigu03</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SubServlet04</servlet-name>
+        <servlet-class>com.atguigu.thymeleaf.demo04.SubServlet04</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubServlet04</servlet-name>
+        <url-pattern>/atguigu04</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TargetServlet</servlet-name>
+        <servlet-class>com.atguigu.thymeleaf.demo04.TargetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TargetServlet</servlet-name>
+        <url-pattern>/target</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IndexPageServlet</servlet-name>
+        <servlet-class>com.atguigu.thymeleaf.demo05.IndexPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexPageServlet</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
+</web-app>
