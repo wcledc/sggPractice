@@ -31,4 +31,14 @@
         <servlet-name>ErrorServlet</servlet-name>
         <url-pattern>/error</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>RegistServlet</servlet-name>
+        <servlet-class>com.atguigu.servlet.work02.RegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistServlet</servlet-name>
+        <url-pattern>/work02</url-pattern>
+    </servlet-mapping>
 </web-app>
